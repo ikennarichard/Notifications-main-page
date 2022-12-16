@@ -1,0 +1,90 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+body {
+
+    padding: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    gap: 2em;
+}
+
+
+main {
+    display: flex;
+    border: 1px solid;
+}
+
+
+.heading {
+    font-size: 1.2rem;
+}
+
+
+.notifications {
+    border: 1px solid;
+}
+
+
+.top_three {
+    margin: 0 auto;
+}
+
+
+
+figure {
+    border: 1px solid;
+    display: flex;
+    gap: 1em;
+    width: 16em;
+}
+
+
+figure > img {
+    height: 2em;
+    margin-block-start: 0.5em;
+}
+
+
+figure > div {
+   align-self: center;
+}
+
+
+
+
+figcaption {
+    display: inline;
+    font-size: 0.9em;
+}
+
+
+.red_dot {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: red;
+    width: 7px;
+    height: 7px;
+}
+
+
+.notification_time {
+    display: block;
+    font-size: 0.9em;
+    /* margin-inline-start: 0.2em; */
+}
