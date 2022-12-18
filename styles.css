@@ -1,4 +1,34 @@
 
+/* imports----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+/* default-styles--------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+
+/* Primary */
+
+--red: hsl(1, 90%, 64%);
+--blue: hsl(219, 85%, 26%);
+
+/* Neutral */
+
+--white: hsl(0, 0%, 100%);
+--very-light-grayish-blue: hsl(210, 60%, 98%);
+--light-grayish-blue-1: hsl(211, 68%, 94%);
+--light-grayish-blue-2: hsl(205, 33%, 90%);
+--grayish-blue: hsl(219, 14%, 63%);
+--dark-grayish-blue: hsl(219, 12%, 42%);
+--very-dark-blue: hsl(224, 21%, 14%);
+
+/* fonts  */
+
+--plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -11,23 +41,34 @@ img {
 
 
 body {
-
+    font-family: var(--plus-jakarta);
     padding: 0;
+    display: grid;
+    place-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--very-dark-blue);
 }
 
 
 
 header {
     display: flex;
-    justify-content: center;
-    border: 1px solid;
-    gap: 2em;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
 main {
     display: flex;
+    flex-direction: column;
     border: 1px solid;
+    width: 20em;
+    gap: 1em; 
+    padding-block-end: 1em;
 }
 
 
@@ -37,47 +78,106 @@ main {
 
 
 .notifications {
+    display: inline-block;
+    font-size: 0.8em;
+    width: 1.4em;
+    position: relative;
+    top: -3px;
+    text-align: center;
     border: 1px solid;
+    border-radius: 0.2em;
+    padding: 0 0.3em;
+    padding-block-end: 0.1em;
+    margin-inline-start: 0.2em;  
+    outline: none;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 
 .top_three {
-    margin: 0 auto;
-}
-
-
-
-figure {
-    border: 1px solid;
+    padding: 0;
     display: flex;
-    gap: 1em;
-    width: 16em;
-}
-
-
-figure > img {
-    height: 2em;
-    margin-block-start: 0.5em;
-}
-
-
-figure > div {
-   align-self: center;
+    flex-direction: column;
+    gap: 0.4em;
 }
 
 
 
-
-figcaption {
-    display: inline;
-    font-size: 0.9em;
+.figure {
+    /* border: 1px solid; */
+    border-radius: 0.2em;
+    display: flex;
+    gap: 0.5em;
+    font-size: 1rem;
+    padding: 0.5em 0.5em 0.5em;
+    background-color: var(--very-light-grayish-blue);
+    box-shadow: 0px 1px 3px var(--light-grayish-blue-2);
+    /* width: 18em; */
+    cursor: pointer;
 }
+
+
+
+.figure.no_background {
+    background: transparent;
+    box-shadow: none;
+}
+
+
+.content_ {
+    padding-inline-end: 2.5em;
+    /* width: 100%; */
+    line-height: 1em;
+    color: var(--grayish-blue);
+    font-size: 0.87rem;
+}
+
+
+.profile_image {
+    width: 3em;
+}
+
+
+.angela_image {
+    width: 2em;
+}
+
+
+
+.jacob_image {
+    width: 2.3em;
+}
+
+
+
+.profile_name {
+    font-weight: 600;
+    font-size: 0.674rem;
+    color: var(--very-dark-blue);
+}
+
+
+.content_link {
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+    margin-block-start: 0;
+    font-size: 0.68rem;
+}
+
+
+
+.content_link.chess {
+    color: var(--blue);
+}
+
 
 
 .red_dot {
     display: inline-block;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--red);
     width: 7px;
     height: 7px;
 }
@@ -85,6 +185,53 @@ figcaption {
 
 .notification_time {
     display: block;
-    font-size: 0.9em;
-    /* margin-inline-start: 0.2em; */
+    font-size: 0.7em;
+    color: var(--grayish-blue);
+    padding-block-start: 0.3em;
 }
+
+
+.last_four {
+    display: grid;
+    gap: 0.5em;
+}
+
+
+.message_box {
+    border: 1px solid var(--light-grayish-blue-2);
+    padding: 0.7em;
+    font-size: 0.7rem;
+    margin-block-start: 0.7em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3px 0.8px;
+    color: var(--blue);
+}
+
+
+.kimberly_image {
+    width: 2.1em;
+}
+
+
+.content_.kimberly {
+    display: flex;
+    gap: 1.5em;
+    padding-inline-end: 3em;
+}
+
+
+.chess_image {
+    width: 2.5em;
+    margin-block-start: 0.2em;
+}
+
+
+.notification_time.kimberly {
+    padding-block-start: 0.3em;
+}
+
+
+.anna_image {
+    width: 2em;
+}
+
