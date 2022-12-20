@@ -21,6 +21,8 @@ notificationDisplay.forEach((item, i) => {
         content[i].style.color = 'var(--dark-grayish-blue)';
 
         red_dot[i].style.display = 'none';
+
+        notificationCount.innerText--;
     } )
 })
 
