@@ -84,10 +84,14 @@ main {
 .mark_all {
     border: none;
     outline: none;
-    color: var(--blue);
+    color: var(--grayish-blue);
     background: none;
     cursor: pointer;
     font-size: 1rem;
+}
+
+.mark_all:hover {
+    color: var(--dark-grayish-blue);
 }
 
 
