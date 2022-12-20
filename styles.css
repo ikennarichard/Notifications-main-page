@@ -45,6 +45,7 @@ body {
     padding: 0;
     display: grid;
     place-items: center;
+    background: radial-gradient(circle, rgba(174,200,238,0.48917748917748916) 0%, rgba(40,233,230,0.1515151515151515) 100%);
 }
 
 
@@ -226,7 +227,7 @@ main {
 
 .message_box {
     appearance: none;
-    border: 1px solid var(--light-grayish-blue-2);
+    border: 1px solid var(--dark-grayish-blue);
     padding: 0.7em;
     padding-inline: 1.5em;
     font-size: 0.7rem;
