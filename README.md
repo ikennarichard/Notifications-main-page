@@ -60,4 +60,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-I want to appreciate my mentors on Front end mentor, they've helped me to get better. I want to appreciate Adriano, Vcarames and Roy.
+I want to appreciate my mentors on Front end mentor, they've helped me to get better, most especially Adriano, Vcarames and Roy.
