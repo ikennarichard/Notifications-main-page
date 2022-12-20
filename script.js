@@ -28,11 +28,11 @@ notificationDisplay.forEach((item, i) => {
 //mark all as read
 markAll.addEventListener ('click', (e) => {
     notificationDisplay.forEach((item, i) => {
-        e.preventDefault();
+
         item.classList.add('none')
         content[i].style.color = 'var(--dark-grayish-blue)';
 
-        red_dot[i].style.display = 'none';e.preventDefault();
+        red_dot[i].style.display = 'none';
         item.classList.add('none')
         content[i].style.color = 'var(--dark-grayish-blue)';
 
