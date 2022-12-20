@@ -44,6 +44,7 @@ body {
     font-family: var(--plus-jakarta);
     padding: 0;
     display: grid;
+    min-height: 100vh;
     place-items: center;
     background: radial-gradient(circle, rgba(213, 226, 247, 0.489) 0%, rgba(152, 249, 248, 0.152) 100%);
 }
