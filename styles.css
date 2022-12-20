@@ -120,7 +120,7 @@ main {
     padding-inline: 0.4em;
     display: flex;
     flex-direction: column;
-    gap: 0.4em;
+    gap: 0.8em;
 }
 
 
@@ -227,7 +227,7 @@ main {
 
 .last_four {
     display: grid;
-    gap: 0.3em;
+    gap: 0.8em;
 }
 
 
