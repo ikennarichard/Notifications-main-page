@@ -22,7 +22,10 @@ notificationDisplay.forEach((item, i) => {
 
         red_dot[i].style.display = 'none';
 
-        notificationCount.innerText--;
+        
+        if (notificationCount.innerText != 0) {
+            notificationCount.innerText--;
+        }
     } )
 })
 
