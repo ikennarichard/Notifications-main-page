@@ -45,7 +45,7 @@ body {
     padding: 0;
     display: grid;
     place-items: center;
-    background: radial-gradient(circle, rgba(174,200,238,0.48917748917748916) 0%, rgba(40,233,230,0.1515151515151515) 100%);
+    background: radial-gradient(circle, rgba(213, 226, 247, 0.489) 0%, rgba(152, 249, 248, 0.152) 100%);
 }
 
 
@@ -67,10 +67,12 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 20em;
     gap: 1em; 
     padding-block-end: 1em;
+    background: white;
+    border-radius: 0.3em;
 }
 
 
@@ -227,7 +229,7 @@ main {
 
 .message_box {
     appearance: none;
-    border: 1px solid var(--dark-grayish-blue);
+    border: 1px solid var(--light-grayish-blue-2);
     padding: 0.7em;
     padding-inline: 1.5em;
     font-size: 0.7rem;
@@ -240,7 +242,7 @@ main {
 
 
 .message_box:hover {
-    background-color: var(--light-grayish-blue-1);
+    background: var(--very-light-grayish-blue)
 }
 
 
